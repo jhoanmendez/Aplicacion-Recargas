@@ -1,0 +1,28 @@
+<div class="login-container">
+    <div class="container">
+        <h2>Nueva Recarga</h2>
+        <form action="" (ngSubmit)="submit()">
+            <div class="field">
+                <div class="card flex justify-center">
+                    <p-select [options]="operadores" [(ngModel)]="selectedOperador" optionLabel="name"
+                        placeholder="Seleccionar operador" class="w-full md:w-56"  name="operador"/>
+                </div>
+            </div>
+            <div class="field">
+                <div class="card flex justify-center">
+                    <input type="text" pInputText [(ngModel)]="numero" title="user" placeholder="Celular" name="numero"/>
+                </div>
+            </div>
+            <div class="field">
+                <div class="card flex justify-center">
+                    <input type="password" pInputText [(ngModel)]="valor" title="password" placeholder="Valor" name="valor"/>
+                </div>
+            </div>
+            <div class="field">
+                <div class="card flex justify-center">
+                    <p-button type="submit" label="Submit" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

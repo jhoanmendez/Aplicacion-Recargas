@@ -1,0 +1,28 @@
+<div class="login-container">
+    <div class="container">
+        <h2>INICIAR SESION</h2>
+        <form action="" (ngSubmit)="submit()">
+            <div class="field">
+                <div class="card flex justify-center">
+                    <p-select [options]="rols" [(ngModel)]="selectedRol" optionLabel="name"
+                        placeholder="Seleccionar rol" class="w-full md:w-56" name="rol"/>
+                </div>
+            </div>
+            <div class="field">
+                <div class="card flex justify-center">
+                    <input type="text" pInputText [(ngModel)]="correo" title="correo" placeholder="Correo" name="correo"/>
+                </div>
+            </div>
+            <div class="field">
+                <div class="card flex justify-center">
+                    <input type="password" pInputText [(ngModel)]="password" title="password" placeholder="Contraseña" name="password"/>
+                </div>
+            </div>
+            <div class="field">
+                <div class="card flex justify-center">
+                    <p-button label="Submit" type="submit"/>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

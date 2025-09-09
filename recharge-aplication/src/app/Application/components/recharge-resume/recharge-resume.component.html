@@ -1,0 +1,32 @@
+<div class="login-container">
+    <div class="container">
+        <h2>Resumen de recargas</h2>
+        <div class="item">
+            <div class="card flex justify-center">
+                <input type="text" pInputText [(ngModel)]="value" title="user" placeholder="Buscar" />
+            </div>
+        </div>
+        <div class="item">
+            <div class="card">
+                <p-table [value]="resumenRecargas" [tableStyle]="{ 'min-width': '50rem' }">
+                    <ng-template #header>
+                        <tr>
+                            <th>Operador</th>
+                            <th>Vendedor</th>
+                            <th>Cantidad</th>
+                            <th>Valor Total</th>
+                        </tr>
+                    </ng-template>
+                    <ng-template #body let-recarga>
+                        <tr>
+                            <td>{{ recarga.operador }}</td>
+                            <td>{{ recarga.vendedor }}</td>
+                            <td>{{ recarga.cantidad }}</td>
+                            <td>{{ recarga.valorTotal | currency:'COP' }}</td>
+                        </tr>
+                    </ng-template>
+                </p-table>
+            </div>
+        </div>
+    </div>
+</div>

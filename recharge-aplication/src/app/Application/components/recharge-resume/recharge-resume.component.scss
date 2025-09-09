@@ -1,0 +1,17 @@
+.login-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    
+    padding: 40px;
+
+    input{
+        margin-bottom: 22px;
+    }
+}
